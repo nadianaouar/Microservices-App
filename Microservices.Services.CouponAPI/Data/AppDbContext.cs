@@ -1,6 +1,15 @@
-﻿namespace Microservices.Services.CouponAPI.Data
+﻿using Microservices.Services.CouponAPI.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace Microservices.Services.CouponAPI.Data
 {
-    public class AppDbContext
+    public class AppDbContext : DbContext
     {
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+
+        }
+        public DbSet<Coupon> Coupons { get; set; }
+    
     }
 }
