@@ -1,15 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "9v3ls4t0AFb5QNPawKqAI+Ye1Mr9+0wUke6OabfRp1uRLSjHZXAhnaTS1Q261t3OzgSxbU95xNfmLnNY2Q9zqw==",
+  "dgSpecHash": "Yhne+TaBd+Vvvoanf41Cxasx013rayjjgvZPeqrn0hmE3FRn0jm7acDT+r6NIpM6WncJcDfd0oYLD9QCl7Je9A==",
   "success": true,
   "projectFilePath": "C:\\Users\\nadou\\source\\repos\\Microservices_App\\Microservices.Services.CouponAPI\\Microservices.Services.CouponAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nadou\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\nadou\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\nadou\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\nadou\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\nadou\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.7\\microsoft.aspnetcore.openapi.7.0.7.nupkg.sha512",
     "C:\\Users\\nadou\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\nadou\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\nadou\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\nadou\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
     "C:\\Users\\nadou\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "C:\\Users\\nadou\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0\\microsoft.entityframeworkcore.7.0.0.nupkg.sha512",

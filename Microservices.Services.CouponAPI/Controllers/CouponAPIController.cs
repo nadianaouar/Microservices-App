@@ -1,5 +1,6 @@
 ﻿using Microservices.Services.CouponAPI.Data;
 using Microservices.Services.CouponAPI.Models;
+using Microservices.Services.CouponAPI.Models.Dto;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,43 +10,47 @@ namespace Microservices.Services.CouponAPI.Controllers
     [ApiController]
     public class CouponAPIController : ControllerBase
     {
-        public readonly AppDbContext _db;
+        private readonly AppDbContext _db;
+        private ResponseDto _response;
+
         public CouponAPIController(AppDbContext db)
         {
-            _db = db; 
+            _db = db;
+            _response = new ResponseDto();
         }
 
         [HttpGet]
-        public object Get()
+        public ResponseDto Get()
         {
             try
             {
                 IEnumerable<Coupon> objList = _db.Coupons.ToList();
-                return objList;
-            }
-            catch (Exception)
-            {
+                _response.Result = objList;
 
-                throw;
             }
-            return null;
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+            }
+            return _response;
         }
 
         [HttpGet]
         [Route("{id:int}")]
-        public object Get(int id)
+        public ResponseDto Get(int id)
         {
             try
             {
-                Coupon coupon = _db.Coupons.First(c => c.CouponId == id);
-                return coupon;
+                Coupon obj = _db.Coupons.First(c => c.CouponId == id);
+                _response.Result = obj;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
             }
-            return null;
+            return _response;
         }
     }
 }
