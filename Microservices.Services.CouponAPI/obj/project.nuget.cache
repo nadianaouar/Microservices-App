@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Yhne+TaBd+Vvvoanf41Cxasx013rayjjgvZPeqrn0hmE3FRn0jm7acDT+r6NIpM6WncJcDfd0oYLD9QCl7Je9A==",
+  "dgSpecHash": "HK0belKCLHCGOHu10lwI9v7CglPnUN8TMBpEV1FCdtNX7f+2nLmiOrx4ET94WwRcEFyNqnx51pOvwpyzim4boQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\nadou\\source\\repos\\Microservices_App\\Microservices.Services.CouponAPI\\Microservices.Services.CouponAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nadou\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\nadou\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\nadou\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\nadou\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\nadou\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -1,4 +1,5 @@
-﻿using Microservices.Services.CouponAPI.Data;
+﻿using AutoMapper;
+using Microservices.Services.CouponAPI.Data;
 using Microservices.Services.CouponAPI.Models;
 using Microservices.Services.CouponAPI.Models.Dto;
 using Microsoft.AspNetCore.Http;
@@ -12,11 +13,13 @@ namespace Microservices.Services.CouponAPI.Controllers
     {
         private readonly AppDbContext _db;
         private ResponseDto _response;
+        private IMapper _mapper;
 
-        public CouponAPIController(AppDbContext db)
+        public CouponAPIController(AppDbContext db, IMapper mapper)
         {
             _db = db;
             _response = new ResponseDto();
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -43,7 +46,7 @@ namespace Microservices.Services.CouponAPI.Controllers
             try
             {
                 Coupon obj = _db.Coupons.First(c => c.CouponId == id);
-                _response.Result = obj;
+                _response.Result = _mapper.Map<CouponDto>(obj);
             }
             catch (Exception ex)
             {
